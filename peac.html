@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* Basic styles for larger screens */
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hide the mobile menu icon by default */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    /* Stack elements vertically */
+    .heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav a {
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Show the mobile menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Show the navigation menu when active */
+    .nav.active {
+        display: flex;
+    }
+}
+</style>
+<body>
+    <div class="heading">
+        <div class="logo">
+            <div class="img">
+                <img src="Screenshot_2024-03-30_231221-removebg-preview.png" alt="Logo">
+            </div>
+        </div>
+    
+        <!-- Menu icon for mobile toggle -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    
+        <div class="nav" id="navLinks">
+            <a href="index.html">HOME</a>&nbsp;&nbsp;
+            <a href="project.html">Project</a>&nbsp;&nbsp;
+            <a href="contactus.html">Contact Us</a>
+            <a href="signup.html">Sign UP</a>&nbsp;&nbsp;
+            <a href="login.html">Log In</a>
+        </div>
+    </div>
+<script>
+    function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
+
+</script>     
+</body>
+
+</html>

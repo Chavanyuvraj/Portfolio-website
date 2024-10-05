@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<style>
+
+body {
+      padding: 0px;
+      margin:0px;
+      background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+     
+   }
+   .heading {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-direction: row;
+      align-items: center;
+      
+    background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 10%, rgba(255,255,255,0.10) 33%, rgba(0,0,0,0.50) 60%);
+ background-blend-mode: soft-light,screen;
+   }
+
+   .nav {
+ 
+      align-items: center;
+
+      display: flex;
+   
+
+   }
+ 
+
+  .logo .img img {
+      font-size: 50px;
+      color: rgb(44, 242, 26);
+      width: 180px;
+      height: 100px;
+   
+      
+
+
+   }
+
+   a:hover {
+
+      color: rgb(21, 21, 21);
+      border-radius: 5px;
+
+   }
+
+   a {
+      text-decoration: none;
+      padding: 10px;
+      display: flex;
+      font-size: 25px;
+      color: white;
+   }
+
+
+.cont {
+    max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #9e9898;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    font-size: 30px;
+font-weight: 150;
+   font-style: italic;
+   text-align: center;
+}
+label ,p{
+    font-size: 17px;
+    color: white;
+    display: block;
+            margin-bottom: 5px;
+}
+#email{
+    color: blue;
+}
+#email:hover{
+    background: none;
+ opacity: 0.8;
+    }
+    #phone{
+        color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    }
+    #phone:hover{
+        background: none;
+        color: red;
+    }
+
+
+.social-icons a {
+    color: #171813;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+
+.social-icons a:hover {
+    background: none;
+    color: #007bff; 
+}
+
+form {
+            max-width: 400px;
+            margin: 0 auto;
+   
+        }
+         label {
+            display: block;
+            margin-bottom: 5px;
+        } 
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        /* Hide the mobile menu icon by default (for larger screens) */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #070505;
+    
+}
+
+   @media screen and (max-width: 768px) {
+    /* Stack the elements vertically on mobile */
+    .heading {
+      display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Hide navigation links by default on mobile */
+    .nav {
+       position:absolute;
+        top: 17%;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.059);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    
+    /* Style mobile navigation links */
+    .nav a {
+        padding: 15px;
+        text-align: left;
+        width: 100%;
+      color: rgb(19, 17, 17);
+
+    }
+
+    /* Show the hamburger menu icon on mobile */
+    .menu-icon {
+        display: block;
+       
+    }
+    /* Show the mobile navigation when active */
+    .nav.active {
+        display: flex;
+    }
+}
+</style>
+<body>
+    <div class="heading"> 
+        <div class="logo">
+            <div class="img">
+                <img src="Screenshot_2024-03-30_231221-removebg-preview.png">
+            </div>
+        </div>
+        
+   
+    <!-- Mobile menu icon (hamburger) -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="nav" id="navLinks"> 
+            <a href="index.html">HOME</a>
+            <a href="project.html">Project</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="singup.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+        </div>
+    </div>
+    
+    <div class="cont">
+        <h1> contact me!</h1>
+        <label for="email">Send Email:</label>
+        <a id="email" href="mailto:yuvrajchavan876@gmail.com">yuvrajchavan876@gmail.com</a>
+       <label for="phone">Phone:</label>
+    <a id="phone" href="tel:+9067904141">9067904141</a>
+        <div class="social-icons">
+            <p> social media channels:</p>
+            <a href="https://github.com/Chavanyuvraj" class="fab fa-github"></a>
+            <a href="https://www.facebook.com/yuvraj.chavan.9421450?mibextid=ZbWKwL" class="fab fa-facebook-square"></a>
+            <a href="https://www.instagram.com/yuvraj_chavanpatil_96k/?hl=en&e=f8d04770-4d7d-4172-a484-a48c8212708d&g=5" class="fab fa-instagram"></a>
+        </div>
+    </div>
+    <form action="#" method="post">
+        <h1>inquiry Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email"  name="email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    <script>
+        function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online School System</title>
+</head>
+<body>
+  ----- HTML CODE-----
+    <h1>Online School System</h1>
+
+    <form id="scoreForm">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required>
+
+        <label for="score">Score:</label>
+        <input type="number" id="score" required>
+
+        <button type="button" onclick="addScore()">Add Score</button>
+    </form>
+
+    <h2>Student Scores</h2>
+    <ul id="scoreList"></ul>
+
+    <p id="average">Average Score: <span id="averageScore">N/A</span></p>
+
+    <script>
+    ---- JAVA SCRIPT AND ANGULAER CODE -----
+        let scores = [];
+
+        function addScore() {
+            const subject = document.getElementById('subject').value;
+            const score = parseFloat(document.getElementById('score').value);
+
+            if (isNaN(score)) {
+                alert('Please enter a valid score.');
+                return;
+            }
+
+            scores.push({ subject, score });
+            displayScores();
+            calculateAverage();
+            clearForm();
+        }
+
+        function displayScores() {
+            const scoreList = document.getElementById('scoreList');
+            scoreList.innerHTML = '';
+            
+            scores.forEach(entry => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${entry.subject}: ${entry.score}`;
+                scoreList.appendChild(listItem);
+            });
+        }
+
+        function calculateAverage() {
+            const averageScoreElement = document.getElementById('averageScore');
+            if (scores.length > 0) {
+                const totalScore = scores.reduce((total, entry) => total + entry.score, 0);
+                const average = totalScore / scores.length;
+                averageScoreElement.textContent = average.toFixed(2);
+            } else {
+                averageScoreElement.textContent = 'N/A';
+            }
+        }
+
+        function clearForm() {
+            document.getElementById('subject').value = '';
+            document.getElementById('score').value = '';
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online School System</title>
+</head>
+<body>
+
+    <h1>Online School System</h1>
+
+    <form id="scoreForm">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required>
+
+        <label for="score">Score:</label>
+        <input type="number" id="score" required>
+
+        <button type="button" onclick="addScore()">Add Score</button>
+    </form>
+
+    <h2>Student Scores</h2>
+    <ul id="scoreList"></ul>
+
+    <p id="average">Average Score: <span id="averageScore">N/A</span></p>
+
+    <script>
+        let score = [];
+
+        function addScore() {
+            const subject = document.getElementById('subject').value;
+            const score = parseFloat(document.getElementById('score').value);
+
+            if (isNaN(score)) {
+                alert('Please enter a valid score.');
+                return;
+            }
+
+            scores.push({ subject, score });
+            displayScores();
+            calculateAverage();
+            clearForm();
+        }
+
+        function displayScores() {
+            const scoreList = document.getElementById('scoreList');
+            scoreList.innerHTML = '';
+            
+            scores.forEach(entry => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${entry.subject}: ${entry.score}`;
+                scoreList.appendChild(listItem);
+            });
+        }
+
+        function calculateAverage() {
+            const averageScoreElement = document.getElementById('averageScore');
+            if (scores.length > 0) {
+                const totalScore = scores.reduce((total, entry) => total + entry.score, 0);
+                const average = totalScore / scores.length;
+                averageScoreElement.textContent = average.toFixed(2);
+            } else {
+                averageScoreElement.textContent = 'N/A';
+            }
+        }
+
+        function clearForm() {
+            document.getElementById('subject').value = '';
+            document.getElementById('score').value = '';
+        }
+    </script>
+
+</body>
+</html>

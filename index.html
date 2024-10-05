@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>portfolio Website</title>
+
+</head>
+<style>
+    body {
+      padding: 0px;
+      margin:0px;
+      background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+     
+   }
+
+   .heading {
+     
+        display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       background-color: #fc5720;
+       padding: 10px;
+   
+       background-color: #DCD9D4;
+       background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 10%, rgba(255,255,255,0.10) 33%, rgba(0,0,0,0.50) 60%);
+       background-blend-mode: soft-light,screen;
+  
+}
+
+   .nav {
+
+      align-items: center;
+
+      display: flex;
+   
+
+   }
+
+ 
+   .logo .img img {
+      font-size: 50px;
+      width: 180px;
+      height: 100px;
+   
+   }
+
+   a:hover {
+
+      color: rgb(21, 21, 21);
+      border-radius: 5px;
+
+   }
+
+  .nav a {
+   height: 100%;
+      text-decoration: none;
+      padding:0px 10px;
+      display: flex;
+      font-size: 25px;
+      color: white;
+   }
+
+   h1 span,h2 span ,h3 span {
+      font-size: 30px;
+      padding: 20px 10px;
+   margin-bottom: 10px;
+      font-weight: 350;
+    letter-spacing: 5px;
+    font-style: oblique;
+    text-decoration: underline;
+    
+ 
+   
+   }
+   h1,h2,h3{
+      text-align: center;
+   }
+
+
+   .info {
+
+      display: flex;
+
+      flex-direction: row;
+      
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    
+
+   }
+
+   .hi {
+      font-size: 22px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      color: rgb(8, 8, 8);
+
+   }
+
+   .name {
+      font-size: 20px;
+      font-style: oblique;
+      color: red;
+   }
+
+   .photo {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+
+   }
+
+   img {
+
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+   }
+
+   p {
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+
+ 
+
+   .skill {
+      width: 90%;
+      background-color: #ccc;
+      display: flex;
+     
+      justify-content:space-around ;
+ text-align: center;
+
+   }
+   h2{
+      font-size: 30px;
+      font-style: oblique;
+   }
+
+   ul ol {
+   padding: 10px;
+   margin: 10px;
+      border-radius: 5px;
+      color: rgb(13, 13, 13);
+      font-size: 25px;
+      font-weight: 200;
+    
+      text-align: center;
+   }
+
+
+
+   main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+   }
+
+   section {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      width: 300px;
+   }
+
+   section img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+   }
+
+   section h2 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-top: 0;
+   }
+
+   section p {
+      font-size: 1rem;
+      line-height: 1.5;
+   }
+
+   .pro1 {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+   }
+
+   .pro1:hover {
+      background-color: #0056b3;
+   }
+   h3{
+      font-size: 20px;
+   }
+
+   .additional-content .p {
+      padding: 10px 2px;
+      text-align: center;
+      background-color: #bcb2b2;
+      padding-top: 10px;
+       
+   }
+
+/* Hide the mobile menu icon by default (for larger screens) */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #070505;
+    
+}
+
+   @media screen and (max-width: 768px) {
+    /* Stack the elements vertically on mobile */
+    .heading {
+      display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Hide navigation links by default on mobile */
+    .nav {
+       position:absolute;
+        top: 17%;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.059);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    
+
+    /* Style mobile navigation links */
+    .nav a {
+        padding: 15px;
+        text-align: left;
+        width: 100%;
+      color: rgb(19, 17, 17);
+
+    }
+
+    /* Show the hamburger menu icon on mobile */
+    .menu-icon {
+        display: block;
+       
+    }
+    /* Show the mobile navigation when active */
+    .nav.active {
+        display: flex;
+    }
+}
+</style>
+
+<body>
+   
+   <div class="heading">
+
+      <div class="logo">
+       <div class="img">
+         <img src="Screenshot_2024-03-30_231221-removebg-preview.png">
+       </div>
+
+      </div>
+  
+
+   
+    <!-- Mobile menu icon (hamburger) -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="nav" id="navLinks">
+         <a href="index.html">HOME</a>&nbsp;&nbsp;
+         <a href="project.html">Project</a>&nbsp;&nbsp;
+         <a href="contactus.html">Contact Us </a>
+         <a href="singup.html">Sign UP</a>&nbsp;&nbsp;
+         <a href="login.html">Log In</a>
+
+     </div>
+    
+   </div>
+   
+   <h1> <span>ABOUT ME</span></h1>
+
+
+   <div class="info">
+      <div class="hi">Hi,<br>&nbsp;&nbsp;&nbsp;&nbsp;i am
+
+
+
+         <div class="name">Yuvraj Chavan</div>
+
+         <p> And i am WebDevloper...</p>
+                 
+      </div>
+
+      <img src="1000014860-01.jpeg">
+
+
+   </div>
+
+   <h2><span>Skill</span></h2>
+   <div class="skill">
+
+      <ul><h2>language  </h2>
+         <ol>C</ol>
+         <ol>C++</ol>
+         <ol>HTML </ol>
+         <ol>CSS </ol>
+         <ol>JAVA SCRIPT</ol>
+         <ol>Node Js</ol>
+      </ul>
+      
+      <ul><h2>Soft Skill</h2>
+         <ol>Communication</ol>
+         <ol>Problem-solving</ol>
+         <ol>Leadership</ol>
+         <ol>Time management</ol>
+         <ol>TeamWork</ol>
+      </ul>
+   </div>
+
+   <div class="project">
+      <h3><span>Project</span></h3>
+
+      <main>
+
+         <section id="project1">
+            <h2>Simple calculeter</h2>
+            <p>Html , Css , Java Script this language use to create project ... </p>
+            <a class="pro1" href="calculate source code.text">  source code </a>
+
+         </section>
+
+         <section id="project2">
+            <h2>Flipcard clone</h2>
+            <p>Html , Css , Java Script this language use to create project ...</p>
+            <a class="pro1" href="flipkard clone source code.text"> source code </a>
+
+         </section>
+
+         <section id="project3">
+            <h2>Career form</h2>
+            <p>Html , Css , Java Script this language use to create project ... </p>
+            <a class="pro1" href="career form.text"> source code </a>
+
+         </section>
+      </main>
+
+   </div>
+   <footer>
+
+      <div class="additional-content">
+         <h3>Contact Us</h3>
+         <div class="p">
+            <p>Email:yuvrajchavan876@gmail.com&nbsp;&nbsp; Phone: +9067904141 </p>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+         </div>
+      </div>
+      
+
+   </footer>
+  
+<script>
+function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
+
+
+</script>
+
+</body>
+</html>
+

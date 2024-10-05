@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+----- HTML CODE----
+    <h1>Complex Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <lable for="name">Name:</lable>
+    <input type="text" name="name">
+
+    <lable for="email">Email:</lable>
+    <input type="email" name="email">
+
+    <lable for="name">Phone:</lable>
+    <input type="number" name="number">
+    <label for="date">Date of Birth </label>
+    <input type="date" name="date">
+    <label for="GENDER">Gender</label>
+    <input type="radio" name="male">
+    <label for="Male">Male</label>
+   
+    <input type="radio" name="fmale">
+    <label for="fMale">Female</label>
+    <label for="country">Country</label>
+    <select>
+        <option value="">India</option>
+        <option value="">UK</option>
+    </select>
+   
+        </fieldset><br><br>
+        
+        <fieldset>
+            <legend>Address Strect
+                <input type="text" name="Address">
+            City
+                <input type="text" name="City">
+            State
+                <input type="text" name="state">
+            Zip Code
+                <input type="text" name="zipcode">
+                </legend>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="comment">Comments</label>
+            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>
+            CAREER FORM
+            </title>
+<style>
+<!----- Css Code ---->
+body{
+    padding:0px;
+    margin:0px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(200, 248, 122);
+  }
+  form{
+      text-align: center;
+      font-size: 20px;
+      font-style: italic;
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="emailid"],
+  input[type="file"],
+  select{
+   height: 35px;
+      width: 70%;
+      padding:0px;
+      margin: 0px;
+      border: 1px solid black;
+  }
+  input[type="checkbox"]{
+     width: 20px;
+     height: 20px;
+  }
+  button{
+      padding: 10px;
+      margin: 0px;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      border-radius: 20px;
+      font-style: italic;
+  }
+  </style>
+        
+        <link rel="stylesheet" href="file.css">
+    </head>
+<!------ Html Code ---->
+    <body>
+        <h2>CAREER FORM</h2>
+        <h4>Share your details here.</h4>
+        <h1>PERSONAL DETAILS</h1>
+        <form>
+    Full Name* :<br>  <input type="text" name="name"><br>&nbsp;&nbsp;&nbsp;<br>
+    Contact No*:<br> <input type="number" name="number"><br>&nbsp;&nbsp;&nbsp;<br>
+    Email id*:<br><input type="emailid" name="emailid"><br>&nbsp;&nbsp;&nbsp;<br>
+    Highest Qualification* :<br> <input type="text" name="highqualificatin"><br>&nbsp;&nbsp;&nbsp;<br>
+    Skill* : <br><input type="text" name="skill"><br>&nbsp;&nbsp;&nbsp;<br>
+<select>Apply For
+   <option>Apply For</option>
+   <option>Web Devlaper</option>
+   <option>Software engineer</option>
+   <option>App Devlaper</option>
+   <option>Artificial Intelligence</option>
+   <option>HR</option>
+
+</select><br>&nbsp;&nbsp;&nbsp;<br>
+Total Experience* : <br><input type="number" name="experience">
+<h1>CURRENT LOCATION</h1>
+State*: <br><input type="text" name="state"><br>&nbsp;&nbsp;&nbsp;<br>
+City*: <br><input type="text" name="city"><br>&nbsp;&nbsp;&nbsp;<br>
+<h1>NATIVE PLACE</h1><p>
+Same as Above&nbsp;&nbsp;<input type ="checkbox"  name="sameasabove"><br>&nbsp;&nbsp;&nbsp;<br></p>
+State*:<br><input type="text" name="state"><br>&nbsp;&nbsp;&nbsp;<br>
+City*: <br><input type="text" name="city"><br>&nbsp;&nbsp;&nbsp;<br>
+Attachment*: <input type="file" name="file" placeholder="No Choose File"><br><br>&nbsp;&nbsp;&nbsp;
+<button>Submit</button>
+<script src="tt.js"></script>
+</form>
+</body>

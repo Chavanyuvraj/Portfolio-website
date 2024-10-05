@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+    
+    <style>
+        body{
+            text-align:center;
+        }
+      input[type="password"]{
+        height: 70%;
+        width: 20%;
+      }  
+        
+    </style>
+    <head>
+  
+    <body ng-app="myapp">
+
+<h1>Angular ng-click Demo</h1>
+<div ng-controller="mycontroller">
+    Enter Password:<input type="password" ng-model="password"><br><br>
+    <button ng-click="displaymassege (password)">show password</button>  
+</div>
+</head>
+<script>
+    var myapp=angular.module('myapp',[]);
+    myapp.controller("mycontroller",function($scope,$window){
+        $scope.displaymassege=function(value){
+            console.log(value)
+            alert(value)
+            
+        }
+    });
+</script>
+
+    </body>
+</html>

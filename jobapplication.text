@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    ------CSS CODE -----
+
+    <style>
+        body{
+            font-size: large;
+            background-color: rgb(242, 244, 245);
+            padding: 10px;
+        }
+        h1{
+          text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        label{
+            font-style: italic;
+            font-weight: 20%;
+            font-size: 20px;
+        }
+     select{
+        size: 10px;
+        width: 50%;
+
+        font-size: 15px;
+        text-align: center;
+     }
+     button{
+        background-color: rgb(23, 22, 21);
+        color: white;
+        border: 1px solid black;
+        font-size: 20px;
+        padding:10px;
+        font-style: oblique;
+        border: none;
+        border-radius: 10px;
+     }
+    </style>
+</head>
+
+------- HTML CODE-----
+
+<body>
+    <h1>Job Applicatin</h1>
+    <form>
+    <lable for="name">Name:</lable><br>
+    <input type="text" name="name"><br>
+
+    <lable for="email">Email:</lable><br>
+    <input type="email" name="email"><br>
+
+    <lable for="name">Phone:</lable><br>
+    <input type="number" name="number"><br>
+
+    <label for="res">Resume:</label><br>
+    <input type="file" name="file"><br>
+
+    <label for="counter">Expricence(years): </label>
+    <input type="number" name="counter" min="0" max="50">
+    <fieldset>
+        <legend>Skills</legend>
+        <input type="checkbox" name="checkbox">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="checkbox">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" name="checkbox">
+        <label for="js">Java Script</label>
+        
+    </fieldset>
+        <label for="Highedu">Highest Education:</label><br>
+        <select>
+            <option> ...Select Your Education...</option>
+            <option>10th Pass</option>
+            <option>12th Pass</option>
+            <option>Under Graduate</option>
+            <option>Post Graduate</option>
+
+        </select><br>
+      <fieldset>
+        <legend>Availability:</legend>
+     
+        <input type="radio" name="fulltime">
+        <label for="radio">Full Time</label><br>
+
+        <input type="radio" name="fulltime">
+        <label for="radio">Part Time</label><br>
+        </fieldset>
+        <label for="addcomment">Additional Comments:</label><br>
+        <textarea name="addcomment" id="" cols="30" rows="10"></textarea><br>
+        <button id="btn">Submit Application</button>
+
+</form>
+</body>
+</html>

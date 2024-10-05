@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Section</title>
+    <style>
+         body {
+      padding: 0px;
+      margin:0px;
+      background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+     
+   }
+
+   .heading {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    
+      align-items: center;
+    background-color: #fc5720;
+    padding: 0px;
+    margin: 0px;
+    background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 10%, rgba(255,255,255,0.10) 33%, rgba(0,0,0,0.50) 60%);
+ background-blend-mode: soft-light,screen;
+  
+}
+
+   .nav {
+
+      align-items: center;
+
+      display: flex;
+   
+
+   }
+
+ 
+   .logo .img img {
+      font-size: 50px;
+      width: 180px;
+      height: 100px;
+   
+   }
+
+   a:hover {
+
+      color: rgb(21, 21, 21);
+      border-radius: 5px;
+
+   }
+
+   a {
+      text-decoration: none;
+      padding: 10px;
+      display: flex;
+      font-size: 25px;
+      color: white;
+   }
+
+   main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+   }
+
+   section {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      width: 300px;
+   }
+
+   section img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+   }
+
+   section h2 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-top: 0;
+   }
+
+   section p {
+      font-size: 1rem;
+      line-height: 1.5;
+   }
+
+   .pro1 {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+   }
+
+   .pro1:hover {
+      background-color: #0056b3;
+   }
+   h3{
+      font-size: 20px;
+   }
+
+   .additional-content .p {
+      padding: 10px 2px;
+      text-align: center;
+      background-color: #bcb2b2;
+      padding-top: 10px;
+       
+   }
+
+   /* Hide the mobile menu icon by default (for larger screens) */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #070505;
+    
+}
+
+   @media screen and (max-width: 768px) {
+    /* Stack the elements vertically on mobile */
+    .heading {
+      display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Hide navigation links by default on mobile */
+    .nav {
+       position:absolute;
+        top: 17%;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.059);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    
+
+    /* Style mobile navigation links */
+    .nav a {
+        padding: 15px;
+        text-align: left;
+        width: 100%;
+      color: rgb(19, 17, 17);
+
+    }
+
+    /* Show the hamburger menu icon on mobile */
+    .menu-icon {
+        display: block;
+       
+    }
+    /* Show the mobile navigation when active */
+    .nav.active {
+        display: flex;
+    }
+}
+    </style>
+</head>
+<body>
+    
+   <div class="heading">
+
+    <div class="logo">
+     <div class="img">
+       <img src="Screenshot_2024-03-30_231221-removebg-preview.png">
+     </div>
+
+    </div>
+
+   
+    <!-- Mobile menu icon (hamburger) -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="nav" id="navLinks">
+       <a href="index.html">HOME</a>&nbsp;&nbsp;
+       <a href="project.html">Project</a>&nbsp;&nbsp;
+       <a href="contactus.html">Contact Us </a>
+       <a href="singup.html">Sign UP</a>&nbsp;&nbsp;
+       <a href="login.html">Log In</a>
+
+
+    </div>
+ </div>
+ &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+    <main>
+    
+
+        <section id="project1">
+           <h2>Job Application</h2>
+           <p>Html , Css  this language use to create simpale job Application from ... </p>
+           <a class="pro1" href="jobapplication.text">  source code </a>
+
+        </section>
+
+        <section id="project2">
+           <h2>Complex From</h2>
+           <p>Html , Css , Java Script this language use to create project ...</p>
+           <a class="pro1" href="complexfrom.text"> source code </a>
+
+        </section>
+
+        <section id="project3">
+           <h2>Student Score Calculate</h2>
+           <p>Html , java script  angular this language use to create project ... </p>
+           <a class="pro1" href="studentscore.text"> source code </a>
+
+        </section>
+
+        <section id="project1">
+           <h2>Simple calculeter</h2>
+           <p>Html , Css , Java Script this language use to create project ... </p>
+           <a class="pro1" href="calculate source code.text">  source code </a>
+
+        </section>
+
+        <section id="project2">
+           <h2>Flipcard clone</h2>
+           <p>Html , Css , Java Script this language use to create project ...</p>
+           <a class="pro1" href="flipkard clone source code.text"> source code </a>
+
+        </section>
+
+        <section id="project3">
+           <h2>Career form</h2>
+           <p>Html , Css , Java Script this language use to create project ... </p>
+           <a class="pro1" href="career form.text"> source code </a>
+
+        </section>
+
+        
+        <section id="project3">
+         <h2>Angular ng-click </h2>
+         <p>Html ,Angular this language use to create project ... </p>
+         <a class="pro1" href="ng-click.text"> source code </a>
+
+      </section>
+     </main>
+
+<script>
+   function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
+</script>
+</body>
+
+</html>
